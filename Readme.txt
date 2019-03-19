@@ -5,5 +5,4 @@ Ryan was here!
 
 
 Cody :APAasdasd
-
-https://discord.gg/DgskN8
+https://discord.gg/32uXCGd
