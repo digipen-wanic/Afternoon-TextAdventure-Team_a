@@ -46,17 +46,126 @@ Room* RoomN_Build()
 	return room;
 }
 
+Room* Room1_Build_StartArea()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
 
-/* TODO REQUIRED: Build room 0 */
-Room* Room0_Build()
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* Room2_Build_ForwardBay()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* Room3_BuildMainHallway()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+Room* Room4_BuildWorkrooom()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* Room5_Build_ElevatorRoom()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+/* TODO REQUIRED: Build room 6 */
+Room* Room6_Build_AirLock()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
 
 	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
-	"This is room 0. It is a display room with a cage in the middle. You can see a jeweled egg inside the cage.  There is a crack in the west wall, but you can't fit through it from this side.\n" */
+	"This is room 6. It is a display room with a cage in the middle. You can see a jeweled egg inside the cage.  There is a crack in the west wall, but you can't fit through it from this side.\n" */
 
-	/* TODO REQUIRED: Add an Exit "north" to Room 1 */
+	room = Room_Create("DEBUG: this is a template - Include a description for the room here\n");
+
+	/* TODO REQUIRED: Add an Exit "north" to Room 3 and 7 */
+
+	Room_AddRoomExit(room, "north", 3);
+	Room_AddRoomExit(room, "South", 7);
+
 	/* TODO BASIC: Add room exit shortcut for "n" */
 
 	/* TODO REQUIRED: add an exit door to the list of items in the room, ExitDoor_Build() */
@@ -67,9 +176,50 @@ Room* Room0_Build()
 	return room;
 }
 
+Room* Room7_Build_Lounge()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
 
-/* TODO REQUIRED: Build room 1 */
-Room* Room1_Build()
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* Room8_Build_CaptainsRoom()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+/* TODO REQUIRED: Build room 9 */
+Room* Room9_BuildEngineRoom1()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -77,7 +227,12 @@ Room* Room1_Build()
 	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
 	"This is room 1.  There is a large mirror here, and it shimmers as you approach.\n" */
 
-	/* TODO REQUIRED: Add an Exit "through the mirror" to Room 2 */
+	room = Room_Create("DEBUG: this is a template - include a description for this room");
+
+	/* TODO REQUIRED: Add an Exit to Room 7 */
+
+	Room_AddRoomExit(room, "east", 7);
+
 	/* TODO BASIC: Add exit shortcuts for "through mirror" and "mirror" */
 
 	/* TODO REQUIRED: Add an Exit "south" back to Room 0 */
@@ -91,7 +246,7 @@ Room* Room1_Build()
 
 
 /* TODO REQUIRED: Build room 2 */
-Room* Room2_Build()
+Room* Room10_BuildEngineRoom2()
 {
 	/* TODO: Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -99,12 +254,38 @@ Room* Room2_Build()
 	/* TODO REQUIRED: Call Room_Create with the Room 2 description:
 	"This is room 2.  The room is isolated from the others, but you can see a crack in the east wall, just large enough to get through.\n" */
 
-	/* TODO REQUIRED: Add an Exit "east" to Room 0 */
+	room = Room_Create("DEBUG: this is a template - include a description for this room");
+
+	/* TODO REQUIRED: Add an Exit "east" to Room 7 */
+
+	Room_AddRoomExit(room, "west", 7);
+
 	/* TODO BASIC: Add exit shortcuts for "e" and "crack" */
 
 	/* TODO REQUIRED: Add a gold piece to the list of items in the room */
 
 	/* return the new room */
+	return room;
+}
+
+Room* Room11_BuildTheBridge()
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+										 /* Items
+										 add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
 	return room;
 }
 
@@ -128,9 +309,18 @@ WorldData* CreateInitialWorldData()
 	/* create the new WorldData object with 3 rooms */
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
-	/* build each room and assign them to the world data */
-	WorldData_SetRoom(worldData, 0, Room0_Build());
-	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
+	/* TODO REQUIRED: add rooms to the world data */
+	WorldData_SetRoom(worldData, 1, Room1_Build_StartArea);
+	WorldData_SetRoom(worldData, 2, Room2_Build_ForwardBay);
+	WorldData_SetRoom(worldData, 3,	Room3_BuildMainHallway);
+	WorldData_SetRoom(worldData, 4, Room4_BuildWorkrooom);
+	WorldData_SetRoom(worldData, 5, Room5_Build_ElevatorRoom);
+	WorldData_SetRoom(worldData, 6, Room6_Build_AirLock);
+	WorldData_SetRoom(worldData, 7, Room7_Build_Lounge);
+	WorldData_SetRoom(worldData, 8, Room8_Build_CaptainsRoom);
+	WorldData_SetRoom(worldData, 9, Room9_BuildEngineRoom1);
+	WorldData_SetRoom(worldData, 10, Room10_BuildEngineRoom2);
+	WorldData_SetRoom(worldData, 11, Room11_BuildTheBridge);
 
 	/* TODO ADVANCED: add additional advanced rooms */
 
