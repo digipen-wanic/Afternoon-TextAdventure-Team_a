@@ -18,6 +18,7 @@ This could be used to create default states as well as loaded state.
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
+#include "FlashLightFunctions.h" //Fuse_Build
 
 
 
@@ -53,15 +54,14 @@ Room* Room1_Build_StartArea()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("You wake up in your room on the L. Selene, a space ship headed to colonize a distant galaxy.\nYou notice that the lights are dimmer than usual, and that everything has fallen onto the floor.\nThere are multiple broken fuses and a single unbroken one on the floor along with a flashlight. The door to your room is slightly open and you see that there are no lights on in the hallway.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "door", 3);  /* 1 = the room index this exit connects to */
 										 /* Items
 										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Fuse_Build());
 
 	/* Return the new room */
 	return room;
