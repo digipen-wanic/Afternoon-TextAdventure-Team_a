@@ -163,12 +163,12 @@ Room* Room6_Build_AirLock()
 	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
 	"This is room 6. It is a display room with a cage in the middle. You can see a jeweled egg inside the cage.  There is a crack in the west wall, but you can't fit through it from this side.\n" */
 
-	room = Room_Create("DEBUG: this is a template - Include a description for the room here\n");
+	room = Room_Create("as you enter the airlock you notice the lever is still in a functing state and there is a handle next to it that is also undamaged.\n you see the doors/exits are on the north and south\n");
 
 	/* TODO REQUIRED: Add an Exit "north" to Room 3 and 7 */
 
 	Room_AddRoomExit(room, "north", 3);
-	Room_AddRoomExit(room, "South", 7);
+	Room_AddRoomExit(room, "south", 7);
 
 	/* TODO BASIC: Add room exit shortcut for "n" */
 
@@ -231,16 +231,13 @@ Room* Room9_BuildEngineRoom1()
 	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
 	"This is room 1.  There is a large mirror here, and it shimmers as you approach.\n" */
 
-	room = Room_Create("DEBUG: this is a template - include a description for this room");
+	room = Room_Create("As you enter the right engine room you notice the engine has a broken quantum carborator and the tools to fix it are not in the room\n you will need to go to the forwad bay and pickup the replacement quantum carborator and your tools are in the other engine room\n fixing the engine is of the upmost importance\n");
 
 	/* TODO REQUIRED: Add an Exit to Room 7 */
 
 	Room_AddRoomExit(room, "east", 7);
 
-	/* TODO BASIC: Add exit shortcuts for "through mirror" and "mirror" */
-
-	/* TODO REQUIRED: Add an Exit "south" back to Room 0 */
-	/* TODO BASIC: Add room exit shortcut for "s" */
+	Room_AddRoomExitShortcut(room, "e", 7);
 
 	/* TODO REQUIRED: Add a brick to the list of items in the room */
 
@@ -258,13 +255,13 @@ Room* Room10_BuildEngineRoom2()
 	/* TODO REQUIRED: Call Room_Create with the Room 2 description:
 	"This is room 2.  The room is isolated from the others, but you can see a crack in the east wall, just large enough to get through.\n" */
 
-	room = Room_Create("DEBUG: this is a template - include a description for this room");
+	room = Room_Create("as you enter the right engine you see that the engine is in working order and only has to be turned back on\n you also notice that your tools are in the closet along the far wall\n you will need these to fix the left engine");
 
 	/* TODO REQUIRED: Add an Exit "east" to Room 7 */
 
 	Room_AddRoomExit(room, "west", 7);
 
-	/* TODO BASIC: Add exit shortcuts for "e" and "crack" */
+	Room_AddRoomExitShortcut(room, "w", 7);
 
 	/* TODO REQUIRED: Add a gold piece to the list of items in the room */
 

@@ -24,7 +24,8 @@ typedef struct GameState
 {
 	/* the user's score */
 	int score;
-
+	/* health */
+	int health;
 	/* the user's flags */
 	GameFlags* gameFlags;
 
@@ -36,6 +37,7 @@ typedef struct GameState
 
 	/* If false, the game is over and should exit */
 	bool isRunning;
+	bool isInjured;
 } GameState;
 
 /* Create an empty game state object */
