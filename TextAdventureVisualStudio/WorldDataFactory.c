@@ -18,6 +18,7 @@ This could be used to create default states as well as loaded state.
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
+#include "MEDKIT.h" /* MEDKIT_Build */
 #include "FlashLightFunctions.h" //Fuse_Build
 
 
@@ -93,37 +94,42 @@ Room* Room3_BuildMainHallway()
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
+	/* if you are injured when you entered the room you lose some of your health */
+	if (gameState->isInjured == true)
+	{
+
+	}
+
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("Standing at the end of the hallway you see the room you started in on your right. \nFarther on your right you see the Workroom \nOn your left you see the Capton's room \nFarther on your right you see the elevator room \nAt the end of the hall you see the air lock \n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "starting room", 1);  /* 1 = the room index this exit connects to */
 
 										 /* Items
 										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
 	/* Return the new room */
 	return room;
 }
-Room* Room4_BuildWorkrooom()
+Room* Room4_BuildMedbay()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("The medbay has paper scattered about. Documentation from everyone who was on board and the intended plans of colonization. \nThere is a medkit on the ground\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "door", 3);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "hallway", 3);
 										 /* Items
 										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), MEDKIT_Build());
 
 	/* Return the new room */
 	return room;
@@ -313,7 +319,7 @@ WorldData* CreateInitialWorldData()
 	WorldData_SetRoom(worldData, 1, Room1_Build_StartArea);
 	WorldData_SetRoom(worldData, 2, Room2_Build_ForwardBay);
 	WorldData_SetRoom(worldData, 3,	Room3_BuildMainHallway);
-	WorldData_SetRoom(worldData, 4, Room4_BuildWorkrooom);
+	WorldData_SetRoom(worldData, 4, Room4_BuildMedbay);
 	WorldData_SetRoom(worldData, 5, Room5_Build_ElevatorRoom);
 	WorldData_SetRoom(worldData, 6, Room6_Build_AirLock);
 	WorldData_SetRoom(worldData, 7, Room7_Build_Lounge);
