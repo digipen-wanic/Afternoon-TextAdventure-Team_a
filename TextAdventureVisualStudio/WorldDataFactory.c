@@ -15,10 +15,11 @@ This could be used to create default states as well as loaded state.
 #include "WorldData.h" /* WorldData_Create, WorldData_SetRoom */
 #include "Room.h" /* Room_Create, Room_AddRoomExit, Room_GetItemList */
 #include "ItemList.h" /* ItemList_Add */
+#include "GameState.h"
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
-#include "MEDKIT.h" /* MEDKIT_Build */
+#include "MEDKITFunctions.h" /* MEDKIT_Build */
 #include "FlashLightFunctions.h" //Fuse_Build
 
 
@@ -95,10 +96,7 @@ Room* Room3_BuildMainHallway()
 	Room* room;
 
 	/* if you are injured when you entered the room you lose some of your health */
-	if (gameState->isInjured == true)
-	{
 
-	}
 
 	/* Create the room
 	include an initial room description */
