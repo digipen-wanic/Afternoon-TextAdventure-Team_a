@@ -105,7 +105,10 @@ Room* Room3_BuildMainHallway()
 	/* Exits
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "starting room", 1);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "medbay", 4);
+	Room_AddRoomExit(room, "capton's room", 8);
+	Room_AddRoomExit(room, "elevator", 5);
+	Room_AddRoomExit(room, "air lock", 6);
 										 /* Items
 										 add items to the room */
 
