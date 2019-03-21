@@ -38,6 +38,7 @@ void MEDKIT_Take(CommandContext context, GameState* gameState, WorldData* worldD
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(worldData);
 
+
 }
 
 /* Build a "exit door" object */

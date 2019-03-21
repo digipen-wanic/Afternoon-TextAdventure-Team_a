@@ -76,6 +76,15 @@
     <ClCompile Include="Source\WorldData.c">
       <Filter>World Data</Filter>
     </ClCompile>
+    <ClCompile Include="FlashLightFuctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="FuseFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="MEDKITFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CommandContext.h">
@@ -170,6 +179,15 @@
     </ClInclude>
     <ClInclude Include="Source\WorldDataFactory.h">
       <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashLightFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="FuseFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="MEDKITFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
