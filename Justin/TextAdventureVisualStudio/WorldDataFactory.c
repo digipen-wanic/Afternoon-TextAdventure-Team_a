@@ -15,10 +15,11 @@ This could be used to create default states as well as loaded state.
 #include "WorldData.h" /* WorldData_Create, WorldData_SetRoom */
 #include "Room.h" /* Room_Create, Room_AddRoomExit, Room_GetItemList */
 #include "ItemList.h" /* ItemList_Add */
+#include "GameState.h"
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
-#include "MEDKIT.h" /* MEDKIT_Build */
+#include "MEDKITFunctions.h" /* MEDKIT_Build */
 #include "FlashLightFunctions.h" //Fuse_Build
 
 
@@ -75,7 +76,7 @@ Room* Room2_Build_ForwardBay()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("You enter a dark room and can only faintly see boxes filling the room. You attempet to walk further into the room but step on a small gear. This feels like stepping on a lego, but metal, and very cold. You dont dare go any farther without a light. \n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -95,10 +96,7 @@ Room* Room3_BuildMainHallway()
 	Room* room;
 
 	/* if you are injured when you entered the room you lose some of your health */
-	if (gameState->isInjured == true)
-	{
 
-	}
 
 	/* Create the room
 	include an initial room description */

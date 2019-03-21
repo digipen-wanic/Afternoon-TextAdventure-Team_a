@@ -45,6 +45,11 @@ void HandleGoCommand(CommandData *command, GameState *gameState, WorldData *worl
 
 	/* output the successful action */
 	printf("You move %s.\n\n", command->noun);
+	if(gameState->isInjured == true)
+	{
+		gameState->health -= 1;
+		printf("You have lost one health.\n");
+	}
 
 	/* get the new room */
 	currentRoom = WorldData_GetRoom(worldData, gameState->currentRoomIndex);
