@@ -64,7 +64,7 @@ Room* Room1_Build_StartArea()
 										 /* Items
 										 add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), Fuse_Build());
-
+	ItemList_AddItem(Room_GetItemList(room), Flashlight_Build());
 	/* Return the new room */
 	return room;
 }

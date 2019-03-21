@@ -18,7 +18,7 @@ typedef struct WorldData WorldData;
 
 
 /* Helper: The action performed when the exit door is used. */
-void Fuse_Use(CommandContext context, GameState* gameState, WorldData* worldData)
+void Flashlight_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(worldData);
@@ -29,7 +29,7 @@ void Fuse_Use(CommandContext context, GameState* gameState, WorldData* worldData
 		printf("");
 	}
 }
-void Fuse_Take(CommandContext context, GameState* gameState, WorldData* worldData)
+void Flashlight_Take(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
@@ -38,8 +38,8 @@ void Fuse_Take(CommandContext context, GameState* gameState, WorldData* worldDat
 }
 
 /* Build a "exit door" object */
-Item* Fuse_Build()
+Item* Flashlight_Build()
 {
 	/* Create a "exit door" item, using the functions defined in this file */
-	return Item_Create("Fuse", "An old flashlight.\n", true, Fuse_Use, Fuse_Take, NULL);
+	return Item_Create("Fuse", "An old flashlight.\n", true, Flashlight_Use, Flashlight_Take, NULL);
 }
