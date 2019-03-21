@@ -1,4 +1,32 @@
 ﻿  WorldDataFactory.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(23): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(23): warning C4001: nonstandard extension 'single line comment' was used
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(314): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(314): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(315): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(315): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(316): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(316): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(317): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(317): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(318): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(318): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(319): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(319): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(320): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(320): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(321): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(321): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(322): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(322): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(323): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(323): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(324): warning C4047: 'function': 'Room *' differs in levels of indirection from 'Room *(*)()'
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\worlddatafactory.c(324): warning C4024: 'WorldData_SetRoom': different types for formal and actual parameter 3
+  ToolBoxFunctions.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\toolboxfunctions.c(28): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\toolboxfunctions.c(28): warning C4100: 'worldData': unreferenced formal parameter
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\toolboxfunctions.c(28): warning C4100: 'context': unreferenced formal parameter
   WorldData.c
   UseCommandHandler.c
   TakeCommandHandler.c
@@ -17,16 +45,28 @@
   GameStateFactory.c
   GameState.c
   GameFlags.c
-  ExitDoorFunctions.c
   Generating Code...
   Compiling...
+  ExitDoorFunctions.c
   EggFunctions.c
   DropCommandHandler.c
   CommandList.c
   CommandHandler.c
   BrickFunctions.c
+  QuantumCarburetorFunctions.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\quantumcarburetorfunctions.c(28): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\quantumcarburetorfunctions.c(28): warning C4100: 'worldData': unreferenced formal parameter
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\quantumcarburetorfunctions.c(28): warning C4100: 'gameState': unreferenced formal parameter
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\quantumcarburetorfunctions.c(28): warning C4100: 'context': unreferenced formal parameter
+  MEDKITFunctions.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\medkitfunctions.c(35): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\medkitfunctions.c(35): warning C4100: 'gameState': unreferenced formal parameter
   main.c
+  FuseFunctions.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\fusefunctions.c(28): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\fusefunctions.c(28): warning C4001: nonstandard extension 'single line comment' was used
+  FlashLightFuctions.c
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\flashlightfuctions.c(28): error C2220: warning treated as error - no 'object' file generated
+c:\users\shain.allen\desktop\afternoon-textadventure-team_a.git\trunk\shain folder\textadventurevisualstudio\flashlightfuctions.c(28): warning C4001: nonstandard extension 'single line comment' was used
   CommandListFactory.c
   Generating Code...
-  GAM100Project.vcxproj -> C:\Users\ryan.scheppler\Desktop\GAM100Spring2018\C\Projects\Assignment2-TextAdventure\Debug\GAM100Project.exe
-  GAM100Project.vcxproj -> C:\Users\ryan.scheppler\Desktop\GAM100Spring2018\C\Projects\Assignment2-TextAdventure\Debug\GAM100Project.pdb (Partial PDB)
