@@ -84,6 +84,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="FlashLightFunctions.h" />
+    <ClInclude Include="FuseFunctions.h" />
+    <ClInclude Include="MEDKITFunctions.h" />
     <ClInclude Include="Source\BrickFunctions.h" />
     <ClInclude Include="Source\CommandContext.h" />
     <ClInclude Include="Source\CommandData.h" />
@@ -118,7 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandListFactory.c" />
+    <ClCompile Include="FlashLightFuctions.c" />
+    <ClCompile Include="FuseFunctions.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="MEDKITFunctions.c" />
     <ClCompile Include="Source\BrickFunctions.c" />
     <ClCompile Include="Source\CommandHandler.c" />
     <ClCompile Include="Source\CommandList.c" />
