@@ -232,11 +232,7 @@ Room* Room9_BuildEngineRoom1()
 
 	Room_AddRoomExit(room, "east", 7);
 
-	/* TODO BASIC: Add exit shortcuts for "through mirror" and "mirror" */
-
-	/* TODO REQUIRED: Add an Exit "south" back to Room 0 */
-
-	/* TODO BASIC: Add room exit shortcut for "s" */
+	Room_AddRoomExitShortcut(room, "e", 7);
 
 	/* TODO REQUIRED: Add a brick to the list of items in the room */
 
@@ -260,9 +256,11 @@ Room* Room10_BuildEngineRoom2()
 
 	Room_AddRoomExit(room, "west", 7);
 
-	/* TODO BASIC: Add exit shortcuts for "e" and "crack" */
+	Room_AddRoomExitShortcut(room, "w", 7);
 
 	/* TODO REQUIRED: Add a gold piece to the list of items in the room */
+
+	
 
 	/* return the new room */
 	return room;
