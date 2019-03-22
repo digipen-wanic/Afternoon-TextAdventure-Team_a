@@ -34,6 +34,8 @@ GameState* GameState_Create()
 	gameState->gameFlags = NULL;
 	gameState->isRunning = true;
 	gameState->isInjured = false;
+	gameState->mIsChasing = false;
+	gameState->mIsDead = false;
 	gameState-> health = 5;
 	/* return the new object */
 	return gameState;

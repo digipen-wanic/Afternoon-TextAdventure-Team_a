@@ -21,7 +21,7 @@ This could be used to create default states as well as loaded state.
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
 #include "MEDKITFunctions.h" /* MEDKIT_Build */
 #include "FlashLightFunctions.h" /*Flashlight_Build*/
-#include "FuseFunctions.h" 
+#include "FuseFunctions.h" /*Fuse_Build*/
 
 
 /******************************************************************************
@@ -56,7 +56,7 @@ Room* Room1_Build_StartArea()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("You wake up in your room on the L. Selene, a space ship headed to colonize a distant galaxy.\nYou notice that the lights are dimmer than usual, and that everything has fallen onto the floor.\nThere are multiple broken fuses and a single unbroken one on the floor along with a flashlight. The door to your room is slightly open and you see that there are no lights on in the hallway.\n");
+	room = Room_Create("You wake up in your room on the L. Selene, a space ship headed to colonize a distant galaxy.\nYou notice that the lights are dimmer than usual, and that everything has fallen onto the floor.\nThere are multiple broken fuses and a single unbroken one on the floor along with a flashlight. The only thing that didn't fall was your prized posession, hang in there kitten poster.\nThe door to your room is slightly open and you see that there are no lights on in the hallway.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
