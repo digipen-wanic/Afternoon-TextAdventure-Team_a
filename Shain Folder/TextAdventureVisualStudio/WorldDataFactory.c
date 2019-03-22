@@ -20,8 +20,8 @@ This could be used to create default states as well as loaded state.
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
 #include "MEDKITFunctions.h" /* MEDKIT_Build */
-#include "FlashLightFunctions.h" //Fuse_Build
-
+#include "FlashLightFunctions.h" /*Flashlight_Build*/
+#include "FuseFunctions.h" 
 
 
 /******************************************************************************
@@ -64,7 +64,7 @@ Room* Room1_Build_StartArea()
 										 /* Items
 										 add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), Fuse_Build());
-
+	ItemList_AddItem(Room_GetItemList(room), Flashlight_Build());
 	/* Return the new room */
 	return room;
 }
@@ -76,7 +76,7 @@ Room* Room2_Build_ForwardBay()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("You enter a dark room and can only faintly see boxes filling the room. You attempet to walk further into the room but step on a small gear. This feels like stepping on a lego, but metal, and very cold. You dont dare go any farther without a light. \n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -105,7 +105,10 @@ Room* Room3_BuildMainHallway()
 	/* Exits
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "starting room", 1);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "medbay", 4);
+	Room_AddRoomExit(room, "capton's room", 8);
+	Room_AddRoomExit(room, "elevator", 5);
+	Room_AddRoomExit(room, "air lock", 6);
 										 /* Items
 										 add items to the room */
 
@@ -187,15 +190,14 @@ Room* Room7_Build_Lounge()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("A fairly large lounge with a set of tables, chairs, and TVs.\nReally just a standard relaxation area. There are three doors in the room, two go to the engine bays and one to the air lock.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
-
-										 /* Items
+	Room_AddRoomExit(room, "air lock", 6);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "engine room right", 9);
+	Room_AddRoomExit(room, "engine room left", 10);										 /* Items
 										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
 	/* Return the new room */
 	return room;
@@ -305,23 +307,23 @@ WorldData* CreateInitialWorldData()
 
 	/* TODO REQUIRED: update room count to match the number of rooms you have created and added to the world
 	   if this number doesn't match then your game will either crash or you will end up stuck in a broken room with no exits */
-	int roomCount = 1;
+	int roomCount = 12;
 
 	/* create the new WorldData object with 3 rooms */
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
 	/* TODO REQUIRED: add rooms to the world data */
-	WorldData_SetRoom(worldData, 1, Room1_Build_StartArea);
-	WorldData_SetRoom(worldData, 2, Room2_Build_ForwardBay);
-	WorldData_SetRoom(worldData, 3,	Room3_BuildMainHallway);
-	WorldData_SetRoom(worldData, 4, Room4_BuildMedbay);
-	WorldData_SetRoom(worldData, 5, Room5_Build_ElevatorRoom);
-	WorldData_SetRoom(worldData, 6, Room6_Build_AirLock);
-	WorldData_SetRoom(worldData, 7, Room7_Build_Lounge);
-	WorldData_SetRoom(worldData, 8, Room8_Build_CaptainsRoom);
-	WorldData_SetRoom(worldData, 9, Room9_BuildEngineRoom1);
-	WorldData_SetRoom(worldData, 10, Room10_BuildEngineRoom2);
-	WorldData_SetRoom(worldData, 11, Room11_BuildTheBridge);
+	WorldData_SetRoom(worldData, 1, Room1_Build_StartArea());
+	WorldData_SetRoom(worldData, 2, Room2_Build_ForwardBay());
+	WorldData_SetRoom(worldData, 3,	Room3_BuildMainHallway());
+	WorldData_SetRoom(worldData, 4, Room4_BuildMedbay());
+	WorldData_SetRoom(worldData, 5, Room5_Build_ElevatorRoom());
+	WorldData_SetRoom(worldData, 6, Room6_Build_AirLock());
+	WorldData_SetRoom(worldData, 7, Room7_Build_Lounge());
+	WorldData_SetRoom(worldData, 8, Room8_Build_CaptainsRoom());
+	WorldData_SetRoom(worldData, 9, Room9_BuildEngineRoom1());
+	WorldData_SetRoom(worldData, 10, Room10_BuildEngineRoom2());
+	WorldData_SetRoom(worldData, 11, Room11_BuildTheBridge());
 
 	/* TODO ADVANCED: add additional advanced rooms */
 
