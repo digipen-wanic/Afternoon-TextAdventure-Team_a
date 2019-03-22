@@ -76,7 +76,7 @@ Room* Room2_Build_ForwardBay()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("You enter a dark room and can only faintly see boxes filling the room. You attempet to walk further into the room but step on a small gear. This feels like stepping on a lego, but metal, and very cold. You dont dare go any farther without a light. \n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -105,7 +105,10 @@ Room* Room3_BuildMainHallway()
 	/* Exits
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "starting room", 1);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "medbay", 4);
+	Room_AddRoomExit(room, "capton's room", 8);
+	Room_AddRoomExit(room, "elevator", 5);
+	Room_AddRoomExit(room, "air lock", 6);
 										 /* Items
 										 add items to the room */
 

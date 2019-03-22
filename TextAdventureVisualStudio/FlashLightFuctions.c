@@ -26,7 +26,7 @@ void Flashlight_Use(CommandContext context, GameState* gameState, WorldData* wor
 	if (gameState->currentRoomIndex == 2)
 	{
 		/*when entering room 2 something happens*/
-		printf("");
+		printf("Turning the corner you notice some of the boxes are really messed up and that area is much colder than the rest of the room. Curiosity takes the best of you and you slowly walk to the boxes. The airduct above you was broken and blowing cold air, You dont think much of it untill it starts to creak. The creaking slowly gets louder and almost closer. .....  ");
 	}
 }
 void Flashlight_Take(CommandContext context, GameState* gameState, WorldData* worldData)
