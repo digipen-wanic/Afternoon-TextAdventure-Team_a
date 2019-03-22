@@ -80,11 +80,10 @@ Room* Room2_Build_ForwardBay()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "hallway", 3);  /* 1 = the room index this exit connects to */
 
 										 /* Items
 										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
 	/* Return the new room */
 	return room;
