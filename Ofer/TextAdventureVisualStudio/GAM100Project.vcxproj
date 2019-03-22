@@ -108,6 +108,7 @@
     <ClInclude Include="Source\InventoryCommandHandler.h" />
     <ClInclude Include="Source\Item.h" />
     <ClInclude Include="Source\ItemList.h" />
+    <ClInclude Include="Source\KeycardFunctions.h" />
     <ClInclude Include="Source\LookCommandHandler.h" />
     <ClInclude Include="Source\QuitCommandHandler.h" />
     <ClInclude Include="Source\Room.h" />
@@ -141,6 +142,7 @@
     <ClCompile Include="Source\InventoryCommandHandler.c" />
     <ClCompile Include="Source\Item.c" />
     <ClCompile Include="Source\ItemList.c" />
+    <ClCompile Include="Source\KeycardFunctions.c" />
     <ClCompile Include="Source\LookCommandHandler.c" />
     <ClCompile Include="Source\QuitCommandHandler.c" />
     <ClCompile Include="Source\Room.c" />
