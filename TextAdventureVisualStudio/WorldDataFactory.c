@@ -56,7 +56,7 @@ Room* Room1_Build_StartArea()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("You wake up in your room on the L. Selene, a space ship headed to colonize a distant galaxy.\nYou notice that the lights are dimmer than usual, and that everything has fallen onto the floor.\nThere are multiple broken fuses and a single unbroken one on the floor along with a flashlight. The only thing that didn't fall was your prized posession, hang in there kitten poster.\nThe door to your room is slightly open and you see that there are no lights on in the hallway.\n");
+	room = Room_Create("You wake up in your room on the L. Selene, a space ship headed to colonize a distant galaxy.\nYou notice that the lights are dimmer than usual, and that everything has fallen onto the floor.\nThere are multiple broken fuses and a single unbroken one on the floor along with a flashlight. The only thing that didn't fall was your prized posession, hang in there kitten poster.\nThe door to your room is slightly open and you see that there are no lights on in the hallway. However there is a small box in the corner of the room...\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
