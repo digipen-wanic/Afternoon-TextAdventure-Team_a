@@ -25,7 +25,7 @@ void Flashlight_Use(CommandContext context, GameState* gameState, WorldData* wor
 	printf("You have turned on your flashlight.\n");
 	if (gameState->currentRoomIndex == 2)
 	{
-		//when entering room 2 something happens
+		/*when entering room 2 something happens*/
 		printf("");
 	}
 }
@@ -41,5 +41,5 @@ void Flashlight_Take(CommandContext context, GameState* gameState, WorldData* wo
 Item* Flashlight_Build()
 {
 	/* Create a "exit door" item, using the functions defined in this file */
-	return Item_Create("Fuse", "An old flashlight.\n", true, Flashlight_Use, Flashlight_Take, NULL);
+	return Item_Create("flashlight", "An old flashlight.\n", true, Flashlight_Use, Flashlight_Take, NULL);
 }

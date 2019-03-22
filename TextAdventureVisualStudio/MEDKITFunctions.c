@@ -37,6 +37,7 @@ void MEDKIT_Take(CommandContext context, GameState* gameState, WorldData* worldD
 	/* avoid W4 warnings on unused parameters - this function conforms to a function typedef */
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(worldData);
+	UNREFERENCED_PARAMETER(gameState);
 
 }
 

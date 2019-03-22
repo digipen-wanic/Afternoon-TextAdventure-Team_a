@@ -33,8 +33,7 @@ GameState* GameState_Create()
 	gameState->inventory = NULL;
 	gameState->gameFlags = NULL;
 	gameState->isRunning = true;
-	gameState->isInjured = false;
-	gameState-> health = 5;
+
 	/* return the new object */
 	return gameState;
 }

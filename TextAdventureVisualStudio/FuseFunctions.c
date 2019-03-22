@@ -22,11 +22,15 @@ void Fuse_Use(CommandContext context, GameState* gameState, WorldData* worldData
 {
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(worldData);
-	printf("You have turned on your flashlight.\n");
+	
 	if (gameState->currentRoomIndex == 2)
 	{
-		//when entering room 2 something happens
+		/*when entering room 2 something happens*/
 		printf("");
+	}
+	else
+	{
+		printf("You have nothing to use this on yet.\n");
 	}
 }
 void Fuse_Take(CommandContext context, GameState* gameState, WorldData* worldData)
