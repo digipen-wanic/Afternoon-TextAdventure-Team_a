@@ -84,6 +84,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Ofer\TextAdventureVisualStudio\Source\KeycardFunctions.h" />
     <ClInclude Include="FlashLightFunctions.h" />
     <ClInclude Include="FuseFunctions.h" />
     <ClInclude Include="MEDKITFunctions.h" />
@@ -120,6 +121,7 @@
     <ClInclude Include="Source\WorldDataFactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Ofer\TextAdventureVisualStudio\Source\KeyCardFunctions.c" />
     <ClCompile Include="CommandListFactory.c" />
     <ClCompile Include="FlashLightFuctions.c" />
     <ClCompile Include="FuseFunctions.c" />

@@ -135,6 +135,7 @@ Room* Room4_BuildMedbay()
 	return room;
 }
 
+/* Author: Ofer Krupka */
 Room* Room5_Build_ElevatorRoom()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
@@ -142,15 +143,13 @@ Room* Room5_Build_ElevatorRoom()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("Welcome to the elevator, please put your keycard in order to use the elevator.\n south - bridge [2nd floor] (Keycard Is Required)\n west - main hallway [1st floor]\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
-
-										 /* Items
-										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	Room_AddRoomExit(room, "west", 3);/* 3 - Main Hallway */
+	Room_AddRoomExitShortcut(room, "w", 3);
+	/* Second floor is added in the KeycardFunctions.c */
 
 	/* Return the new room */
 	return room;
@@ -270,6 +269,7 @@ Room* Room10_BuildEngineRoom2()
 	return room;
 }
 
+/* Author: Ofer Krupka */
 Room* Room11_BuildTheBridge()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
@@ -277,15 +277,12 @@ Room* Room11_BuildTheBridge()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("Main bridge computer: \"Error: unable to control the ship\"");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
-
-										 /* Items
-										 add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	Room_AddRoomExit(room, "east", 5/*elevator*/);  /* 5 = Elevator*/
+	Room_AddRoomExitShortcut(room, "e", 5);
 
 	/* Return the new room */
 	return room;
